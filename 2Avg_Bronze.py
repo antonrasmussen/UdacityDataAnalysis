@@ -46,8 +46,8 @@ def avg_medal_count():
 
     avg_bronze_at_least_one_gold = numpy.mean(filter2['bronze'])
 
-    return avg_bronze_at_least_one_gold
-
+    #return avg_bronze_at_least_one_gold
+    print avg_bronze_at_least_one_gold
 
 
 avg_medal_count()
