@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efe21c8-5753-4b3e-b385-a85d8d99efbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/updated_turnstile_110528.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NYCSubway1/ProblemSet2.py" afterPath="$PROJECT_DIR$/NYCSubway1/ProblemSet2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NYCSubway1/Sources.txt" afterPath="$PROJECT_DIR$/NYCSubway1/Sources.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/file_1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/file_2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/output_file.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UdacityDataAnalysis.iws" />
@@ -358,19 +358,23 @@
       <created>1417221715141</created>
       <updated>1417221715141</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Problem Set 2.6 test updates.&#10;&#10;Using Jake Cheng's method with simulated data... somehow getting two 2 header rows--will fix bug later.">
+      <created>1417225089700</created>
+      <updated>1417225089700</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59288096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -402,7 +406,8 @@
     </option>
     <MESSAGE value="Updating 3Avg_All.py to include course code." />
     <MESSAGE value="Showing all work on Problem Set 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing all work on Problem Set 2" />
+    <MESSAGE value="Problem Set 2.6 test updates.&#10;&#10;Using Jake Cheng's method with simulated data... somehow getting two 2 header rows--will fix bug later." />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem Set 2.6 test updates.&#10;&#10;Using Jake Cheng's method with simulated data... somehow getting two 2 header rows--will fix bug later." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
