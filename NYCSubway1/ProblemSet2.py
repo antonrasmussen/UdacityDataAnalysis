@@ -3,7 +3,9 @@ __author__ = 'Anton Rasmussen'
 
 import pandas
 import pandasql
+import csv
 filename = 'weather_underground.csv'
+filenames = 'turnstile_110528.txt'
 
 def num_rainy_days(filename):
     '''
@@ -142,6 +144,54 @@ def avg_min_temperature(filename):
     return mean_temp_weekends
 
 
+
+def fix_turnstile_data(filenames):
+    '''
+    Filenames is a list of MTA Subway turnstile text files. A link to an example
+    MTA Subway turnstile text file can be seen at the URL below:
+    http://web.mta.info/developers/data/nyct/turnstile/turnstile_110507.txt
+
+    As you can see, there are numerous data points included in each row of the
+    a MTA Subway turnstile text file.
+
+    You want to write a function that will update each row in the text
+    file so there is only one entry per row. A few examples below:
+    A002,R051,02-00-00,05-28-11,00:00:00,REGULAR,003178521,001100739
+    A002,R051,02-00-00,05-28-11,04:00:00,REGULAR,003178541,001100746
+    A002,R051,02-00-00,05-28-11,08:00:00,REGULAR,003178559,001100775
+
+    Write the updates to a different text file in the format of "updated_" + filename.
+    For example:
+        1) if you read in a text file called "turnstile_110521.txt"
+        2) you should write the updated data to "updated_turnstile_110521.txt"
+
+    The order of the fields should be preserved.
+
+    You can see a sample of the turnstile text file that's passed into this function
+    and the the corresponding updated file in the links below:
+
+    Sample input file:
+    https://www.dropbox.com/s/mpin5zv4hgrx244/turnstile_110528.txt
+    Sample updated file:
+    https://www.dropbox.com/s/074xbgio4c39b7h/solution_turnstile_110528.txt
+    '''
+
+    # Initiate input/output
+    for name in filenames:
+        # assign read and write operations
+        reading = csv.reader(open(name, 'rb'))
+        writing = csv.writer(open("updated_"+name, 'wb'))
+
+        # Go through output one line at a time
+        for line in reading:
+            header = line[:3] # define the header as the first three elements of each 8 element row
+            line[:3] = []     # set first three elements to NULL to get to next five elements
+            while len(line) > 0:  # Loop through last five elements of each row until there's nothing left
+                data = line[:5]  # define the data as the last five elements of each 8 element row
+                line[:5] = []    # set data elements to NULL
+                writing.writerow(header+data)    # Header + Data = the row we want
+
+
 def main():
     print
     print
@@ -155,5 +205,8 @@ def main():
     print
     print
     print 'The average min temp on rainy days, where min temp is greater than 55 is: \n',avg_min_temperature(filename)
+    print
+    print
+    print 'The reformated turnstile data follows: \n',fix_turnstile_data(filenames)
 
 main()
