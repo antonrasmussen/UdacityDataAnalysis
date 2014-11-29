@@ -5,7 +5,9 @@ import pandas
 import pandasql
 import csv
 filename = 'weather_underground.csv'
-filenames = 'turnstile_110528.txt'
+#filenames = 'turnstile_110528.txt'
+filenames2 = ['file_1.csv','file_2.csv']
+output_file = 'output_file.csv'
 
 def num_rainy_days(filename):
     '''
@@ -191,6 +193,41 @@ def fix_turnstile_data(filenames):
                 line[:5] = []    # set data elements to NULL
                 writing.writerow(header+data)    # Header + Data = the row we want
 
+def create_master_turnstile_file(filenames2, output_file):
+    '''
+    Write a function that takes the files in the list filenames, which all have the
+    columns 'C/A, UNIT, SCP, DATEn, TIMEn, DESCn, ENTRIESn, EXITSn', and consolidates
+    them into one file located at output_file.  There should be ONE row with the column
+    headers, located at the top of the file.
+
+    For example, if file_1 has:
+    'C/A, UNIT, SCP, DATEn, TIMEn, DESCn, ENTRIESn, EXITSn'
+    line 1 ...
+    line 2 ...
+
+    and another file, file_2 has:
+    'C/A, UNIT, SCP, DATEn, TIMEn, DESCn, ENTRIESn, EXITSn'
+    line 3 ...
+    line 4 ...
+    line 5 ...
+
+    We need to combine file_1 and file_2 into a master_file like below:
+     'C/A, UNIT, SCP, DATEn, TIMEn, DESCn, ENTRIESn, EXITSn'
+    line 1 ...
+    line 2 ...
+    line 3 ...
+    line 4 ...
+    line 5 ...
+    '''
+    with open(output_file, 'w') as master_file:
+       master_file.write('C/A,UNIT,SCP,DATEn,TIMEn,DESCn,ENTRIESn,EXITSn\n')
+       for filename in filenames2:
+                # read our 'filename' input file
+                with open(filename, 'rb') as f:
+                   #write each line, one at a time, in the master_file
+                   for line in f:
+                        master_file.write(line)
+
 
 def main():
     print
@@ -207,6 +244,9 @@ def main():
     print 'The average min temp on rainy days, where min temp is greater than 55 is: \n',avg_min_temperature(filename)
     print
     print
-    print 'The reformated turnstile data follows: \n',fix_turnstile_data(filenames)
+    #print 'The reformated turnstile data follows: \n',fix_turnstile_data(filenames) ##not working. . . figure out later
+    print
+    print
+    print 'The two files data has been combined into one master_file: ', create_master_turnstile_file(filenames2, 'output_file.csv')
 
 main()

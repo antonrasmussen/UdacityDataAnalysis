@@ -9,3 +9,19 @@ https://dev.mysql.com/doc/refman/5.1/en/counting-rows.html
 Problem Set 2-3
 
 N/A
+
+Problem Set 2-4
+
+N/A
+
+Problem Set 2-5
+
+http://forums.udacity.com/questions/100160489/spolier-alert-a-working-solution-using-array-slices#ud359
+http://www.diveintopython.net/native_data_types/lists.html
+https://docs.python.org/2/library/csv.html#examples
+
+
+Problem Set 2-6
+
+https://piazza.com/class/i23uptiifb6194?cid=37
+http://effbot.org/zone/python-with-statement.htm
