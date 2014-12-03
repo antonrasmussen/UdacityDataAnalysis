@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efe21c8-5753-4b3e-b385-a85d8d99efbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/file_1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/file_2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NYCSubway1/output_file.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UdacityDataAnalysis.iws" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="ProblemSet2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NYCSubway1/ProblemSet2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18854415" vertical-offset="3797" max-vertical-offset="4369">
+            <state vertical-scroll-proportion="2.1360383" vertical-offset="2981" max-vertical-offset="4369">
               <caret line="228" column="47" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
               <folding>
                 <element signature="e#33#46#0" expanded="true" />
@@ -362,11 +359,15 @@
       <created>1417225089700</created>
       <updated>1417225089700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Problem Set 2.6 test updates.&#10;&#10;Using Jake Cheng's method with simulated data... somehow getting two 2 header rows--will fix bug later.">
+      <created>1417225155492</created>
+      <updated>1417225155492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -525,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NYCSubway1/ProblemSet2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18854415" vertical-offset="3797" max-vertical-offset="4369">
+        <state vertical-scroll-proportion="2.1360383" vertical-offset="2981" max-vertical-offset="4369">
           <caret line="228" column="47" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
           <folding>
             <element signature="e#33#46#0" expanded="true" />

@@ -25,3 +25,28 @@ Problem Set 2-6
 
 https://piazza.com/class/i23uptiifb6194?cid=37
 http://effbot.org/zone/python-with-statement.htm
+
+Problem Set 2-7
+
+http://stackoverflow.com/questions/22312247/filter-csv-file-with-pandas-python
+http://forums.udacity.com/questions/100159094/solution-spoiler#ud359
+
+Problem Set 2-8
+
+http://stackoverflow.com/questions/10982089/how-to-shift-a-column-in-pandas-dataframe
+http://en.wikipedia.org/wiki/Subtraction # to see that x - y = . . . is minuend - subtrahend
+http://stackoverflow.com/questions/18127160/pandas-fillna-output-still-has-nan-values
+
+Problem Set 2-9
+
+Same as last problem set--just changed "ENTRY" to "EXIT" and switched the fillna value from 1 to 0.
+
+Problem Set 2-10
+
+Basic python . . . just messed around until I got it. (BTW, note to self, getting stuff like this without any outside assistance is super AWESOME!)
+
+Problem Set 2-11 
+
+http://docs.python.org/2/library/datetime.html#datetime.datetime.strptime
+
+Had to search around a bit; but, basically I discovered how to use the datetime strptime and strf time and then had to know which % to use.
